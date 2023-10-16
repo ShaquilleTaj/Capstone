@@ -33,7 +33,7 @@ main{
     display: table;
   }
   body{
-    background-color: brown;
+    background-color: rgb(179, 136, 136);
   }
   * {box-sizing: border-box}
 
@@ -88,3 +88,16 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;}
+  button {
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;}
+button{
+    border-radius: 12px;
+  }
+.imageone{
+    display:inline-block
+}

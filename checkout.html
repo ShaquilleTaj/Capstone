@@ -3,189 +3,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <form name="ShoppingList">
-        <fieldset>
-            <legend>Shopping cart</legend>
-            <label>Item: <input type="text" name="name"></label>
-            <label>Quantity: <input type="text" name="data"></label>
-    
-            <input type="button" value="Save"   onclick="SaveItem()">
-            <input type="button" value="Update" onclick="ModifyItem()">
-            <input type="button" value="Delete" onclick="RemoveItem()">
-        </fieldset>
-        <div id="items_table">
-            <h2>Shopping List</h2>
-            <table id="list"></table>
-            <label><input type="button" value="Clear" onclick="ClearAll()">
-            * Delete all items</label>
-        </div>
-        div class="shopping-cart">
-  <!-- Title -->
-  <div class="title">
-    Shopping Bag
-  </div>
- 
-  <!-- Product #1 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="item-1.png" alt="" />
-    </div>
- 
-    <div class="description">
-      <span>medium dog cage</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$49.99</div>
-  </div>
- 
-  <!-- Product #2 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="item-2.png" alt=""/>
-    </div>
- 
-    <div class="description">
-      <span>Large dog cage</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$59.99</div>
-  </div>
- 
-  <!-- Product #3 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="item-3.png" alt="" />
-    </div>
- 
-    <div class="description">
-      <span>Travel Cage</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$39.99</div>
-  </div>
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="item-3.png" alt="" />
-    </div>
- 
-    <div class="description">
-      <span>crate</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$19.99</div>
-    <div class="item">
-        <div class="buttons">
-          <span class="delete-btn"></span>
-          <span class="like-btn"></span>
-        </div>
-     
-        <div class="image">
-          <img src="item-3.png" alt="" />
-        </div>
-     
-        <div class="description">
-          <span>Doggy Jail</span>
-        </div>
-     
-        <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
-            <img src="plus.svg" alt="" />
-          </button>
-          <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button">
-            <img src="minus.svg" alt="" />
-          </button>
-        </div>
-     
-        <div class="total-price">$69.99</div>
-        <div class="item">
-            <div class="buttons">
-              <span class="delete-btn"></span>
-              <span class="like-btn"></span>
-            </div>
-         
-            <div class="image">
-              <img src="item-3.png" alt="" />
-            </div>
-         
-            <div class="description">
-              <span>puppy cage</span>
-            </div>
-         
-            <div class="quantity">
-              <button class="plus-btn" type="button" name="button">
-                <img src="plus.svg" alt="" />
-              </button>
-              <input type="text" name="name" value="1">
-              <button class="minus-btn" type="button" name="button">
-                <img src="minus.svg" alt="" />
-              </button>
-            </div>
-         
-            <div class="total-price">$29.99</div>
+   
 </div>
+<div class="container">
+    <h1>Shipping</h1>
+    <p>Please enter your shipping details.</p>
+    <hr />
+    <div class="form">
+      
+    <div class="fields fields--2">
+      <label class="field">
+        <span class="field__label" for="firstname">First name</span>
+        <input class="field__input" type="text" id="firstname" value="John" />
+      </label>
+      <label class="field">
+        <span class="field__label" for="lastname">Last name</span>
+        <input class="field__input" type="text" id="lastname" value="Doe" />
+      </label>
+    </div>
+    <label class="field">
+      <span class="field__label" for="address">Address</span>
+      <input class="field__input" type="text" id="address" />
+    </label>
+    <label class="field">
+      <span class="field__label" for="country">Country</span>
+      <select class="field__input" id="country">
+        <option value=""></option>
+        <option value="unitedstates">United States</option>
+      </select>
+    </label>
+    <div class="fields fields--3">
+      <label class="field">
+        <span class="field__label" for="zipcode">Zip code</span>
+        <input class="field__input" type="text" id="zipcode" />
+      </label>
+      <label class="field">
+        <span class="field__label" for="city">City</span>
+        <input class="field__input" type="text" id="city" />
+      </label>
+      <label class="field">
+        <span class="field__label" for="state">State</span>
+        <select class="field__input" id="state">
+          <option value=""></option>
+        </select>
+      </label>
+    </div>
+    </div>
+    <hr>
+    <button class="button">Continue</button>
+  </div>
     </form>
+  
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<!-- End Best Seller -->
+</div>
+<div class="clearfix visible-sm"></div>
+<!-- Cart -->
+<div class="col-lg-9 col-md-9 col-sm-12">
+<div class="col-lg-12 col-sm-12">
+<span class="title">SHOPPING CART</span>
+</div>
+<div class="col-lg-12 col-sm-12 hero-feature">
+<div class="table-responsive">
+<table class="table table-bordered tbl-cart">
+<thead>
+<tr>
+<td class="hidden-xs">Image</td>
+<td>Product Name</td>
+<td>Size</td>
+<td>Color</td>
+<td class="td-qty">Quantity</td>
+<td>Unit Price</td>
+<td>Sub Total</td>
+<td>Remove</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="hidden-xs">
+<a href="#">
+<img src="https://via.placeholder.com/200x200/" alt="Age Of Wisdom Tan Graphic Tee" title="" width="47" height="47">
+</a>
+</td>
+<td><a href="#">Large Dog Cage</a>
+</td>
+<td>
+<select name="">
+<option value="" selected="selected">S</option>
+<option value="">M</option>
+</select>
+</td>
+<td>-</td>
+<td>
+<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span><input type="text" name="" value="1" class="input-qty form-control text-center" style="display: block;"><span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
+</td>
+<td class="price">$59.99</td>
+<td>$ 59.99</td>
+<td class="text-center">
+<a href="#" class="remove_cart" rel="2">
+<i class="fa fa-trash-o"></i>
+</a>
+</td>
+</tr>
+<tr>
+<td class="hidden-xs">
+<a href="#">
+<img src="https://via.placeholder.com/200x200/" alt="Adidas Men Red Printed T-shirt" title="" width="47" height="47">
+</a>
+</td>
+<td><a href="#">Crate</a>
+</td>
+<td>
+<select name="">
+<option value="">S</option>
+<option value="" selected="selected">M</option>
+</select>
+</td>
+<td>
+<select name="">
+<option value="" selected="selected">Red</option>
+<option value="">Blue</option>
+</select>
+</td>
+<td>
+<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span><input type="text" name="" value="2" class="input-qty form-control text-center" style="display: block;"><span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
+</td>
+<td class="price">$19.99</td>
+<td>$39.98</td>
+<tr>
+  <td class="hidden-xs">
+  <a href="#">
+  <img src="https://via.placeholder.com/200x200/" alt="Age Of Wisdom Tan Graphic Tee" title="" width="47" height="47">
+  </a>
+  </td>
+  <td><a href="#">Medium Dog Cage</a>
+  </td>
+  <td>
+  <select name="">
+  <option value="" selected="selected">S</option>
+  <option value="">M</option>
+  </select>
+  </td>
+  <td>-</td>
+  <td>
+  <div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span><input type="text" name="" value="1" class="input-qty form-control text-center" style="display: block;"><span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
+  </td>
+  <td class="price">$49.99</td>
+  <td>$ 49.99</td>
+  <td class="text-center">
+  <a href="#" class="remove_cart" rel="2">
+  <i class="fa fa-trash-o"></i>
+  </a>
+  </td>
+  </tr>
+<td class="text-center">
+<a href="#" class="remove_cart" rel="1">
+<i class="fa fa-trash-o"></i>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan="6" align="right">Total</td>
+<td class="total" colspan="2"><b>$ 149.96</b>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="btn-group btns-cart">
+<button type="button" class="btn btn-primary"><i class="fa fa-arrow-circle-left"></i> Continue Shopping</button>
+<button type="button" class="btn btn-primary">Update Cart</button>
+<button type="button" class="btn btn-primary">Checkout <i class="fa fa-arrow-circle-right"></i></button>
+
+</div>
+
+</div>
+</div>
+<!-- End Cart -->
+</div>
+</div> 
 </body>
 </html>
